@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day01-OCP-DIP">
-      <change beforePath="$PROJECT_DIR$/Spring6-001-revelation/src/main/resources/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/resources/readme.txt" afterDir="false" />
+    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day01-依赖注入">
+      <change afterPath="$PROJECT_DIR$/Spring6-002-first/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/java/com/powernode/spring6/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +35,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Maven-IDEA/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="E:\Maven-IDEA\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="localRepository" value="E:\Mavens-IDEA" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Maven-IDEA/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="E:\Maven-IDEA\apache-maven-3.8.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -46,10 +53,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "spring.configuration.checksum": "23f10524990b452227f4fb5d2f2252c3"
   }
 }]]></component>
   <component name="RunManager">
@@ -86,7 +95,16 @@
       <workItem from="1666842233533" duration="59000" />
       <workItem from="1666842301846" duration="4164000" />
       <workItem from="1666853937426" duration="885000" />
-      <workItem from="1666856037836" duration="435000" />
+      <workItem from="1666856037836" duration="3595000" />
+      <workItem from="1666862189114" duration="3977000" />
+      <workItem from="1666866177512" duration="226000" />
+      <workItem from="1666866413000" duration="135000" />
+      <workItem from="1666866556847" duration="267000" />
+      <workItem from="1666866831833" duration="142000" />
+      <workItem from="1666867386473" duration="165000" />
+      <workItem from="1666867560285" duration="575000" />
+      <workItem from="1666868148574" duration="2770000" />
+      <workItem from="1666872599085" duration="344000" />
     </task>
     <task id="LOCAL-00001" summary="spring6-day01">
       <created>1666840972740</created>
@@ -116,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666856169947</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spring6-day01-依赖注入">
+      <created>1666856577596</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666856577596</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +161,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring6-day01" />
     <MESSAGE value="spring6-day01-OCP-DIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring6-day01-OCP-DIP" />
+    <MESSAGE value="spring6-day01-依赖注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring6-day01-依赖注入" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
