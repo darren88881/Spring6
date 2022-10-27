@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/java/com/powernode/spring6/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/java/com/powernode/spring6/dao/impl/UserDaoImplForMySql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/java/com/powernode/spring6/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/java/com/powernode/spring6/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/java/com/powernode/spring6/web/UserAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/resources/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/test/java/com/powernode/spring6/test/TestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day01-OCP-DIP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,19 +40,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TestAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.powernode.spring6.test.TestAction" />
@@ -97,7 +84,9 @@
       <workItem from="1666840674060" duration="1480000" />
       <workItem from="1666842171888" duration="51000" />
       <workItem from="1666842233533" duration="59000" />
-      <workItem from="1666842301846" duration="3154000" />
+      <workItem from="1666842301846" duration="4164000" />
+      <workItem from="1666853937426" duration="885000" />
+      <workItem from="1666856037836" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="spring6-day01">
       <created>1666840972740</created>
@@ -113,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666841335888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="spring6-day01-OCP-DIP">
+      <created>1666853110425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666853110425</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +128,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring6-day01" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring6-day01" />
+    <MESSAGE value="spring6-day01-OCP-DIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring6-day01-OCP-DIP" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
