@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day01-OCP-DIP">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring6-001-revelation/src/main/resources/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-001-revelation/src/main/resources/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1666842233533" duration="59000" />
       <workItem from="1666842301846" duration="4164000" />
       <workItem from="1666853937426" duration="885000" />
-      <workItem from="1666856037836" duration="116000" />
+      <workItem from="1666856037836" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="spring6-day01">
       <created>1666840972740</created>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666853110425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="spring6-day01-OCP-DIP">
+      <created>1666856169947</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666856169947</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
