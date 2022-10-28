@@ -1,6 +1,10 @@
 package com.powernode.spring6.test;
 
+import com.powernode.spring6.bean.User;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -11,12 +15,16 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class FirstSpringTest {
 
+    private Logger logger = LoggerFactory.getLogger(FirstSpringTest.class);
+
     @Test
     public void testFirstSpringTest(){
-        ClassPathXmlApplicationContext applicationContext =
+        ApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("spring.xml");
 
-        applicationContext.getBean("userBean");
+        User userBean = applicationContext.getBean("userBean", User.class);
+        System.out.println(userBean);
 
+        logger.info(userBean+"已创建！");
     }
 }
