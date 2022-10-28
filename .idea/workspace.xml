@@ -7,14 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day01-getBean">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/resources/spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-002-first/src/test/java/com/powernode/spring6/test/FirstSpringTest.java" afterDir="false" />
+    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day02-log4j2">
+      <change afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/java/com/powernode/spring6/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/java/com/powernode/spring6/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/java/com/powernode/spring6/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring6-002-first/src/main/java/com/powernode/spring6/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/java/com/powernode/spring6/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring6-002-first/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring6-002-first/src/test/java/com/powernode/spring6/test/FirstSpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-002-first/src/test/java/com/powernode/spring6/test/FirstSpringTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Tag Library Descriptor" />
         <option value="Class" />
       </list>
     </option>
@@ -61,6 +61,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
+    "last_directory_selection": "E:/IDEA-workspace-darren/Spring6/Spring6-002-first/src/test/java",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -69,7 +70,12 @@
     "spring.configuration.checksum": "23f10524990b452227f4fb5d2f2252c3"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.FirstSpringTest.testFristSpringTest">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.powernode.spring6.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.FirstSpringTest.testFirstSpringTest">
     <configuration name="TestAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.powernode.spring6.test.TestAction" />
       <module name="Spring6-001-revelation" />
@@ -79,6 +85,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstSpringTest.testFirstSpringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-002-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.powernode.spring6.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.powernode.spring6.test" />
+      <option name="MAIN_CLASS_NAME" value="com.powernode.spring6.test.FirstSpringTest" />
+      <option name="METHOD_NAME" value="testFirstSpringTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,6 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstSpringTest.testFirstSpringTest" />
         <item itemvalue="JUnit.FirstSpringTest.testFristSpringTest" />
         <item itemvalue="Application.TestAction" />
       </list>
@@ -129,7 +152,8 @@
       <workItem from="1666867386473" duration="165000" />
       <workItem from="1666867560285" duration="575000" />
       <workItem from="1666868148574" duration="2770000" />
-      <workItem from="1666872599085" duration="3419000" />
+      <workItem from="1666872599085" duration="3464000" />
+      <workItem from="1666917183971" duration="6193000" />
     </task>
     <task id="LOCAL-00001" summary="spring6-day01">
       <created>1666840972740</created>
@@ -173,7 +197,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666873141873</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spring6-day01-getBean">
+      <created>1666877156843</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666877156843</updated>
+    </task>
+    <task id="LOCAL-00008" summary="spring6-day01-getBean">
+      <created>1666877172864</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666877172864</updated>
+    </task>
+    <task id="LOCAL-00009" summary="spring6-day02-log4j2">
+      <created>1666921032140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666921032140</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +241,8 @@
     <MESSAGE value="spring6-day01-依赖注入" />
     <MESSAGE value="spring6-day01-bean" />
     <MESSAGE value="spring6-day01-getBean" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring6-day01-getBean" />
+    <MESSAGE value="spring6-day02-log4j2" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring6-day02-log4j2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

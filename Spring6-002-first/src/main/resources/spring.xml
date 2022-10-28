@@ -3,5 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userBean" class="com.powernode.spring6.bean.User"></bean>
+    <bean id="user" class="com.powernode.spring6.bean.User"></bean>
+    <bean id="userDao" class="com.powernode.spring6.dao.UserDao"></bean>
+    <bean id="orderDao" class="com.powernode.spring6.dao.OrderDao"></bean>
+    <!--set注入-->
+    <bean id="userService1" class="com.powernode.spring6.service.UserService">
+        <property name="userDao" ref="userDao"></property>
+        <property name="orderDao" ref="orderDao"></property>
+    </bean>
+    <!--构造器注入-->
+    <bean id="userService2" class="com.powernode.spring6.service.UserService">
+        <constructor-arg index="0" ref="userDao"></constructor-arg>
+        <constructor-arg index="1" ref="orderDao"></constructor-arg>
+    </bean>
+
 </beans>
