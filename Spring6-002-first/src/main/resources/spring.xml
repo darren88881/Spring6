@@ -19,6 +19,7 @@
         <constructor-arg index="1" ref="orderDao"></constructor-arg>
     </bean>
 
+    <!--P命名空间和C命名空间注入-->
     <bean id="dogBlack" class="com.powernode.spring6.bean.Dog" p:name="小黑" p:age="3"></bean>
     <bean id="dogFlower" class="com.powernode.spring6.bean.Dog" c:name="小花" c:age="4"></bean>
 
