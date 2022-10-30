@@ -23,4 +23,8 @@
     <bean id="dogBlack" class="com.powernode.spring6.bean.Dog" p:name="小黑" p:age="3"></bean>
     <bean id="dogFlower" class="com.powernode.spring6.bean.Dog" c:name="小花" c:age="4"></bean>
 
+    <!--autowire 自动装配-->
+    <bean id="userService3" class="com.powernode.spring6.service.UserService" autowire="byName"/>
+    <bean id="userService4" class="com.powernode.spring6.service.UserService" autowire="byType"/>
+
 </beans>

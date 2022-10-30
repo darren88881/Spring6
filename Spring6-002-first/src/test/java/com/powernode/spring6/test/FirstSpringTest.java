@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.logging.Logger;
+
 /**
  * 测试类
  *
@@ -17,9 +19,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class FirstSpringTest {
 
     private ApplicationContext applicationContext;
+    private Logger logger;
     @Before
     public void beforeTest(){
         applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        logger = Logger.getLogger("FirstSpringTest");
     }
 
     @Test
@@ -28,8 +32,20 @@ public class FirstSpringTest {
         System.out.println(userBean);
         UserService userService1 = applicationContext.getBean("userService1", UserService.class);
         UserService userService2 = applicationContext.getBean("userService2", UserService.class);
+        UserService userService3 = applicationContext.getBean("userService3", UserService.class);
+        UserService userService4 = applicationContext.getBean("userService4", UserService.class);
+        logger.info("------------------userService1 begin------------------");
         userService1.saveUser();
+        logger.info("------------------userService1 end------------------");
+        logger.info("------------------userService2 begin------------------");
         userService2.saveUser();
+        logger.info("------------------userService2 end------------------");
+        logger.info("------------------userService3 begin------------------");
+        userService3.saveUser();
+        logger.info("------------------userService3 end------------------");
+        logger.info("------------------userService4 begin------------------");
+        userService4.saveUser();
+        logger.info("------------------userService4 end------------------");
     }
 
     @Test
