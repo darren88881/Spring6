@@ -52,7 +52,9 @@ public class FirstSpringTest {
     public void testPAndCBean(){
         Dog dogBlack = applicationContext.getBean("dogBlack", Dog.class);
         Dog dogFlower = applicationContext.getBean("dogFlower", Dog.class);
+        Dog dogWolf = applicationContext.getBean("dogWolf", Dog.class);
         System.out.println(dogBlack);
         System.out.println(dogFlower);
+        System.out.println(dogWolf);
     }
 }
