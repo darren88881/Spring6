@@ -1,7 +1,7 @@
-package com.powernode.spring6.service;
+package com.power.node.spring6.service;
 
-import com.powernode.spring6.dao.OrderDao;
-import com.powernode.spring6.dao.UserDao;
+import com.power.node.spring6.dao.OrderDao;
+import com.power.node.spring6.dao.UserDao;
 
 /**
  *

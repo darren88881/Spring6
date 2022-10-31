@@ -1,4 +1,4 @@
-package com.powernode.spring6.design;
+package com.power.node.spring6.design;
 
 /**
  * 枪工厂-具体工厂

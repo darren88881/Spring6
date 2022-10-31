@@ -1,9 +1,10 @@
-package com.powernode.spring6.test;
+package com.power.node.spring6.test;
 
-import com.powernode.spring6.bean.Dog;
-import com.powernode.spring6.bean.User;
-import com.powernode.spring6.scope.Student;
-import com.powernode.spring6.service.UserService;
+import com.power.node.spring6.service.UserService;
+import com.power.node.spring6.bean.Dog;
+import com.power.node.spring6.bean.Star;
+import com.power.node.spring6.bean.User;
+import com.power.node.spring6.scope.Student;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -88,8 +89,14 @@ public class FirstSpringTest {
             logger.info(Boolean.toString(student5.equals(student6)));//true
             logger.info(student5.toString());//true
         }).start();
+    }
 
-
-
+    /**
+     * 简单工厂实例化Bean
+     */
+    @Test
+    public void testFactory(){
+        Star star = applicationContext.getBean("star", Star.class);
+        System.out.println(star);
     }
 }

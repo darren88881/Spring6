@@ -1,4 +1,4 @@
-package com.powernode.spring6.design;
+package com.power.node.spring6.design;
 
 /**
  * 武器-抽象产品

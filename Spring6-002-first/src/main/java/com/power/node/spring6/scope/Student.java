@@ -1,4 +1,4 @@
-package com.powernode.spring6.scope;
+package com.power.node.spring6.scope;
 
 /**
  *

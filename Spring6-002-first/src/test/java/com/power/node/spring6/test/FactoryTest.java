@@ -1,7 +1,7 @@
-package com.powernode.spring6.test;
+package com.power.node.spring6.test;
 
-import com.powernode.spring6.design.DaggerFactory;
-import com.powernode.spring6.design.Weapon;
+import com.power.node.spring6.design.DaggerFactory;
+import com.power.node.spring6.design.Weapon;
 import org.junit.Test;
 
 /**

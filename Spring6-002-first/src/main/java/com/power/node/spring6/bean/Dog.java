@@ -1,4 +1,4 @@
-package com.powernode.spring6.bean;
+package com.power.node.spring6.bean;
 
 /**
  * P命名空间和C命名空间注入
