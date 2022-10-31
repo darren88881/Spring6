@@ -39,4 +39,28 @@
         <property name="age" value="${age}"></property>
     </bean>
 
+    <!--
+        scope:
+            singleton	在spring IoC容器仅存在一个Bean实例，Bean以单例方式存在，bean作用域范围的默认值。
+            prototype	每次从容器中调用Bean时，都返回一个新的实例，即每次调用getBean()时，相当于执行newXxxBean()。
+            request——每次HTTP请求都会创建一个新的Bean，该作用域仅适用于web的Spring WebApplicationContext环境。
+            session——同一个HTTP Session共享一个Bean，不同Session使用不同的Bean。该作用域仅适用于web的Spring WebApplicationContext环境。
+            application——限定一个Bean的作用域为ServletContext的生命周期。该作用域仅适用于web的Spring WebApplicationContext环境。
+
+    -->
+    <bean id="student1" class="com.powernode.spring6.scope.Student" scope="singleton"></bean>
+    <bean id="student2" class="com.powernode.spring6.scope.Student" scope="singleton"></bean>
+
+    <!--自定义作用域-->
+    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+        <property name="scopes">
+            <map>
+                <entry key="myThread">
+                    <bean class="org.springframework.context.support.SimpleThreadScope"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean id="student3" class="com.powernode.spring6.scope.Student" scope="myThread"></bean>
+
 </beans>

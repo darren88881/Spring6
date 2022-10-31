@@ -2,6 +2,7 @@ package com.powernode.spring6.test;
 
 import com.powernode.spring6.bean.Dog;
 import com.powernode.spring6.bean.User;
+import com.powernode.spring6.scope.Student;
 import com.powernode.spring6.service.UserService;
 import org.junit.Before;
 import org.junit.Test;
@@ -56,5 +57,39 @@ public class FirstSpringTest {
         System.out.println(dogBlack);
         System.out.println(dogFlower);
         System.out.println(dogWolf);
+    }
+
+    /**
+     * spring 作用域
+     */
+    @Test
+    public void testScope(){
+        Student student1 = applicationContext.getBean("student1", Student.class);
+        Student student2 = applicationContext.getBean("student2", Student.class);
+        // 注意这是不同的对象
+        logger.info(Boolean.toString(student1.equals(student2)));//false
+
+    }
+
+    /**
+     * 自定义作用域
+     */
+    @Test
+    public void testThreadScope(){
+        Student student3 = applicationContext.getBean("student3", Student.class);
+        Student student4 = applicationContext.getBean("student3", Student.class);
+
+        logger.info(student3.toString());//true
+        logger.info(Boolean.toString(student3.equals(student4)));//true
+
+        new Thread(()->{
+            Student student5 = applicationContext.getBean("student3", Student.class);
+            Student student6 = applicationContext.getBean("student3", Student.class);
+            logger.info(Boolean.toString(student5.equals(student6)));//true
+            logger.info(student5.toString());//true
+        }).start();
+
+
+
     }
 }
