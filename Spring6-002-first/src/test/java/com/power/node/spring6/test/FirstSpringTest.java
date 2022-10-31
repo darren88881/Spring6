@@ -1,5 +1,7 @@
 package com.power.node.spring6.test;
 
+import com.power.node.spring6.bean.Chicken;
+import com.power.node.spring6.bean.Person;
 import com.power.node.spring6.service.UserService;
 import com.power.node.spring6.bean.Dog;
 import com.power.node.spring6.bean.Star;
@@ -93,10 +95,31 @@ public class FirstSpringTest {
 
     /**
      * 简单工厂实例化Bean
+     * 通过静态方法实例化
      */
     @Test
     public void testFactory(){
         Star star = applicationContext.getBean("star", Star.class);
         System.out.println(star);
+    }
+
+    /**
+     * 工厂Bean实例化
+     * 通过实例方法实例化
+     */
+    @Test
+    public void testFactoryBean(){
+        Chicken chicken = applicationContext.getBean("chicken", Chicken.class);
+        System.out.println(chicken);
+    }
+
+    /**
+     * 工厂Bean实例化
+     * 通过实现FactoryBean实例化
+     */
+    @Test
+    public void testPersonFactoryBean(){
+        Person person = applicationContext.getBean("person", Person.class);
+        System.out.println(person);
     }
 }

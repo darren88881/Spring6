@@ -65,4 +65,10 @@
 
     <!--简单工厂实例化Bean-->
     <bean id="star" class="com.power.node.spring6.bean.StarFactory" factory-method="get"/>
+
+    <!--通过实例方法实例化-->
+    <bean id="chickenFactory" class="com.power.node.spring6.bean.ChickenFactory"/>
+    <bean id="chicken" factory-bean="chickenFactory" factory-method="getChicken"/>
+
+    <bean id="person" class="com.power.node.spring6.bean.PersonFactoryBean"/>
 </beans>
