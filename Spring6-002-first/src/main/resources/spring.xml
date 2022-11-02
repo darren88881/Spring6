@@ -71,4 +71,12 @@
     <bean id="chicken" factory-bean="chickenFactory" factory-method="getChicken"/>
 
     <bean id="person" class="com.power.node.spring6.bean.PersonFactoryBean"/>
+
+    <!--含有日期对象的实例化-->
+    <bean id="date" class="com.power.node.spring6.bean.DateFactoryBean">
+        <constructor-arg index="0" value="2012-03-48"/>
+    </bean>
+    <bean id="giraffe" class="com.power.node.spring6.bean.Giraffe">
+        <property name="birth" ref="date"/>
+    </bean>
 </beans>

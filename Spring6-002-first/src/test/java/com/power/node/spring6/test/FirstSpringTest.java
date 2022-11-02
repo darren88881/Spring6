@@ -1,6 +1,7 @@
 package com.power.node.spring6.test;
 
 import com.power.node.spring6.bean.Chicken;
+import com.power.node.spring6.bean.Giraffe;
 import com.power.node.spring6.bean.Person;
 import com.power.node.spring6.service.UserService;
 import com.power.node.spring6.bean.Dog;
@@ -121,5 +122,14 @@ public class FirstSpringTest {
     public void testPersonFactoryBean(){
         Person person = applicationContext.getBean("person", Person.class);
         System.out.println(person);
+    }
+
+    /**
+     * 实例化带有指定日期的对象
+     */
+    @Test
+    public void testGiraffeFactoryBean(){
+        Giraffe giraffe = applicationContext.getBean("giraffe", Giraffe.class);
+        System.out.println(giraffe);
     }
 }
