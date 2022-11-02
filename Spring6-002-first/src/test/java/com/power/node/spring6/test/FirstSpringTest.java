@@ -1,5 +1,6 @@
 package com.power.node.spring6.test;
 
+import com.power.node.spring6.bean.BeanLifeCycle;
 import com.power.node.spring6.bean.Chicken;
 import com.power.node.spring6.bean.Giraffe;
 import com.power.node.spring6.bean.Person;
@@ -32,7 +33,7 @@ public class FirstSpringTest {
     }
 
     @Test
-    public void testFirstSpringTest(){
+    public void testFirstSpring(){
         User userBean = applicationContext.getBean("user", User.class);
         System.out.println(userBean);
         UserService userService1 = applicationContext.getBean("userService1", UserService.class);
@@ -131,5 +132,17 @@ public class FirstSpringTest {
     public void testGiraffeFactoryBean(){
         Giraffe giraffe = applicationContext.getBean("giraffe", Giraffe.class);
         System.out.println(giraffe);
+    }
+    /**
+     * Bean的生命周期
+     */
+    @Test
+    public void testBeanLifeCycle(){
+        ClassPathXmlApplicationContext classPathXmlApplicationContext =
+                (ClassPathXmlApplicationContext) applicationContext;
+        BeanLifeCycle beanLife = classPathXmlApplicationContext.getBean("beanLife", BeanLifeCycle.class);
+        System.out.println("第四步:使用Bean "+beanLife.toString());
+
+        classPathXmlApplicationContext.close();
     }
 }
