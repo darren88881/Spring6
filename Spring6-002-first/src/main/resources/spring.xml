@@ -80,9 +80,5 @@
         <property name="birth" ref="date"/>
     </bean>
 
-    <!--Bean 的生命周期-->
-    <bean id="beanLife" class="com.power.node.spring6.bean.BeanLifeCycle" init-method="initMethod"
-          destroy-method="destroyMethod">
-        <property name="beanName" value="bean_name"/>
-    </bean>
+
 </beans>

@@ -133,16 +133,5 @@ public class FirstSpringTest {
         Giraffe giraffe = applicationContext.getBean("giraffe", Giraffe.class);
         System.out.println(giraffe);
     }
-    /**
-     * Bean的生命周期
-     */
-    @Test
-    public void testBeanLifeCycle(){
-        ClassPathXmlApplicationContext classPathXmlApplicationContext =
-                (ClassPathXmlApplicationContext) applicationContext;
-        BeanLifeCycle beanLife = classPathXmlApplicationContext.getBean("beanLife", BeanLifeCycle.class);
-        System.out.println("第四步:使用Bean "+beanLife.toString());
 
-        classPathXmlApplicationContext.close();
-    }
 }
