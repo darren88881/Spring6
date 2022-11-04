@@ -8,7 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring6-002-first" />
         <module name="Spring6-001-revelation" />
+        <module name="Spring6-003-myspring" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Spring6-003-mySpring" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>

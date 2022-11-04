@@ -7,11 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day02-get and set 注入">
-      <change afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/java/com/powernode/spring6/bean/Dog.java" afterDir="false" />
+    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day05-循环依赖问题">
+      <change afterPath="$PROJECT_DIR$/Spring6-003-myspring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-003-myspring/src/main/java/com/power/node/myspring/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-003-myspring/src/main/java/com/power/node/myspring/bean/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-003-myspring/src/main/java/com/power/node/myspring/bean/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-003-myspring/src/main/resources/myspring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-003-myspring/src/test/java/com/myspringfromwork/test/MySpringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring6-002-first/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-002-first/src/main/resources/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring6-002-first/src/test/java/com/powernode/spring6/test/FirstSpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-002-first/src/test/java/com/powernode/spring6/test/FirstSpringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring6-002-first/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring6-002-first/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,14 +29,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="spring-beans.schema" />
         <option value="Tag Library Descriptor" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../Mavens-IDEA/org/springframework/spring-beans/6.0.0-M2/spring-beans-6.0.0-M2.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,7 +49,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\Mavens-IDEA" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../Maven-IDEA/apache-maven-3.8.6" />
-        <option name="userSettingsFile" value="E:\Maven-IDEA\apache-maven-3.8.6\conf\settings.xml" />
+        <option name="userSettingsFile" value="E:\Maven-IDEA\apache-maven-3.8.6\conf\settings-yuanshi.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -47,89 +57,119 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2GhUutzWNf50FIZyLKmSYgc9RDn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_directory_selection": "E:/IDEA-workspace-darren/Spring6/Spring6-002-first/src/test/java",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "spring.configuration.checksum": "23f10524990b452227f4fb5d2f2252c3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/IDEA-workspace-darren/Spring6/Spring6-002-first/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IDEA-workspace-darren/Spring6/Spring6-002-first/src/main/java/com/power/node/spring6/reflection&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;23b7fe38068b9797c15677d3ba7efefb&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\main\java\com\power\node\spring6\reflection" />
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\main\resources" />
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\test\java\com\power\node\spring6\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\test\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.powernode.spring6.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FirstSpringTest.testPAndCBean">
-    <configuration name="TestAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.powernode.spring6.test.TestAction" />
-      <module name="Spring6-001-revelation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.powernode.spring6.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstSpringTest.testFirstSpringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MySpringTest.test01">
+    <configuration name="BeanLifeTest.testCycleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring6-002-first" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.powernode.spring6.test.*" />
+          <option name="PATTERN" value="com.power.node.spring6.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.powernode.spring6.test" />
-      <option name="MAIN_CLASS_NAME" value="com.powernode.spring6.test.FirstSpringTest" />
-      <option name="METHOD_NAME" value="testFirstSpringTest" />
+      <option name="PACKAGE_NAME" value="com.power.node.spring6.test" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.spring6.test.BeanLifeTest" />
+      <option name="METHOD_NAME" value="testCycleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstSpringTest.testFristSpringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstSpringTest.testGiraffeFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring6-002-first" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.powernode.spring6.test.*" />
+          <option name="PATTERN" value="com.power.node.spring6.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.powernode.spring6.test" />
-      <option name="MAIN_CLASS_NAME" value="com.powernode.spring6.test.FirstSpringTest" />
-      <option name="METHOD_NAME" value="testFristSpringTest" />
+      <option name="PACKAGE_NAME" value="com.power.node.spring6.test" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.spring6.test.FirstSpringTest" />
+      <option name="METHOD_NAME" value="testGiraffeFactoryBean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstSpringTest.testPAndCBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring6-002-first" />
+    <configuration name="MySpringTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-003-myspring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.powernode.spring6.test.*" />
+          <option name="PATTERN" value="com.myspringfromwork.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.powernode.spring6.test" />
-      <option name="MAIN_CLASS_NAME" value="com.powernode.spring6.test.FirstSpringTest" />
-      <option name="METHOD_NAME" value="testPAndCBean" />
+      <option name="PACKAGE_NAME" value="com.myspringfromwork.test" />
+      <option name="MAIN_CLASS_NAME" value="com.myspringfromwork.test.MySpringTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reflectionTest.getFilePath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-002-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.power.node.spring6.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.power.node.spring6.test" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.spring6.test.reflectionTest" />
+      <option name="METHOD_NAME" value="getFilePath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reflectionTest.testReadTxtReflection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-002-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.power.node.spring6.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.power.node.spring6.test" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.spring6.test.reflectionTest" />
+      <option name="METHOD_NAME" value="testReadTxtReflection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,10 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstSpringTest.testPAndCBean" />
-        <item itemvalue="JUnit.FirstSpringTest.testFirstSpringTest" />
-        <item itemvalue="JUnit.FirstSpringTest.testFristSpringTest" />
-        <item itemvalue="Application.TestAction" />
+        <item itemvalue="JUnit.MySpringTest.test01" />
+        <item itemvalue="JUnit.FirstSpringTest.testGiraffeFactoryBean" />
+        <item itemvalue="JUnit.BeanLifeTest.testCycleTest" />
+        <item itemvalue="JUnit.reflectionTest.testReadTxtReflection" />
+        <item itemvalue="JUnit.reflectionTest.getFilePath" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +209,13 @@
       <workItem from="1666867560285" duration="575000" />
       <workItem from="1666868148574" duration="2770000" />
       <workItem from="1666872599085" duration="3464000" />
-      <workItem from="1666917183971" duration="8785000" />
+      <workItem from="1666917183971" duration="9022000" />
+      <workItem from="1666948402724" duration="3807000" />
+      <workItem from="1667166775364" duration="15803000" />
+      <workItem from="1667347510474" duration="23699000" />
+      <workItem from="1667434237702" duration="7228000" />
+      <workItem from="1667521406645" duration="9653000" />
+      <workItem from="1667546025318" duration="2469000" />
     </task>
     <task id="LOCAL-00001" summary="spring6-day01">
       <created>1666840972740</created>
@@ -240,7 +287,112 @@
       <option name="project" value="LOCAL" />
       <updated>1666924457350</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="spring6-day02-get and set 注入">
+      <created>1666948164595</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666948164595</updated>
+    </task>
+    <task id="LOCAL-00012" summary="spring6-day02-P命名空间和C命名空间注入">
+      <created>1666949358924</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666949358924</updated>
+    </task>
+    <task id="LOCAL-00013" summary="spring6-day02-autowire自动装配">
+      <created>1667168727430</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667168727430</updated>
+    </task>
+    <task id="LOCAL-00014" summary="spring6-day03-引入外部属性文件">
+      <created>1667169707723</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667169707723</updated>
+    </task>
+    <task id="LOCAL-00015" summary="spring6-day03-bean的作用域">
+      <created>1667181474526</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667181474526</updated>
+    </task>
+    <task id="LOCAL-00016" summary="spring6-day03-设计模式-工厂模式">
+      <created>1667198210557</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667198210558</updated>
+    </task>
+    <task id="LOCAL-00017" summary="spring6-day03-测试工厂模式">
+      <created>1667198825848</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667198825848</updated>
+    </task>
+    <task id="LOCAL-00018" summary="spring6-day03-简单工厂实例化Bean">
+      <created>1667200428847</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667200428847</updated>
+    </task>
+    <task id="LOCAL-00019" summary="spring6-day03-通过FactoryBean实例化Bean">
+      <created>1667202401878</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667202401878</updated>
+    </task>
+    <task id="LOCAL-00020" summary="spring6-day04-通过FactoryBean实例化含有日期的对象">
+      <created>1667350392671</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667350392671</updated>
+    </task>
+    <task id="LOCAL-00021" summary="spring6-day04-Bean的生命周期">
+      <created>1667353384872</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1667353384872</updated>
+    </task>
+    <task id="LOCAL-00022" summary="spring6-day04-Bean的生命周期图解">
+      <created>1667396984141</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667396984141</updated>
+    </task>
+    <task id="LOCAL-00023" summary="spring6-day05-循环依赖问题">
+      <created>1667522074388</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667522074388</updated>
+    </task>
+    <task id="LOCAL-00024" summary="spring6-day03-简单工厂实例化Bean注释">
+      <created>1667527316056</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667527316056</updated>
+    </task>
+    <task id="LOCAL-00025" summary="spring6-day05-java 反射">
+      <created>1667533075922</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1667533075922</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +417,21 @@
     <MESSAGE value="spring6-day01-getBean" />
     <MESSAGE value="spring6-day02-log4j2" />
     <MESSAGE value="spring6-day02-get and set 注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring6-day02-get and set 注入" />
+    <MESSAGE value="spring6-day02-P命名空间和C命名空间注入" />
+    <MESSAGE value="spring6-day02-autowire自动装配" />
+    <MESSAGE value="spring6-day03-引入外部属性文件" />
+    <MESSAGE value="spring6-day03-bean的作用域" />
+    <MESSAGE value="spring6-day03-设计模式-工厂模式" />
+    <MESSAGE value="spring6-day03-测试工厂模式" />
+    <MESSAGE value="spring6-day03-简单工厂实例化Bean" />
+    <MESSAGE value="spring6-day03-通过FactoryBean实例化Bean" />
+    <MESSAGE value="spring6-day04-通过FactoryBean实例化含有日期的对象" />
+    <MESSAGE value="spring6-day04-Bean的生命周期" />
+    <MESSAGE value="spring6-day04-Bean的生命周期图解" />
+    <MESSAGE value="spring6-day05-循环依赖问题" />
+    <MESSAGE value="spring6-day03-简单工厂实例化Bean注释" />
+    <MESSAGE value="spring6-day05-java 反射" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring6-day05-java 反射" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
