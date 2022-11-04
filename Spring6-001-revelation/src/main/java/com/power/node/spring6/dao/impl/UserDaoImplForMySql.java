@@ -1,6 +1,6 @@
-package com.powernode.spring6.dao.impl;
+package com.power.node.spring6.dao.impl;
 
-import com.powernode.spring6.dao.UserDao;
+import com.power.node.spring6.dao.UserDao;
 
 public class UserDaoImplForMySql implements UserDao {
     @Override

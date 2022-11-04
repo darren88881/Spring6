@@ -1,4 +1,4 @@
-package com.powernode.spring6.dao;
+package com.power.node.spring6.dao;
 
 /**
  * 持久层

@@ -4,6 +4,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--循环依赖问题-->
+
+    <!--singleton + setter模式下的循环依赖是没有任何问题的。-->
+    <!--singleton表示在整个Spring容器当中是单例的,独一无二的对象。-->
+    <!--
+        在singleton + setter模式下,为什么循环依赖不会出现问题, Spring是如何应对的?
+        主要的原因是,在这种模式KSpring对Bean的管理主要分为两个阶段:
+            第一个阶段:在Spring容器加载的时候,实例化Bean,只要其中任意一个Bean实例化之后,马上进行“曝光”【不等属性赋值就眼光】
+            第二个阶段: Bean“曝光”之后,再进行属性的赋值(调用set方法。)。
+
+        核心解决方案是:实例化对象和对象的属性赋值分为两个阶段来完成的。
+     -->
     <bean id="husband" class="com.power.node.spring6.cycle.Husband" scope="singleton">
         <property name="name" value="张三"/>
         <property name="wife" ref="wife"/>

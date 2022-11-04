@@ -1,6 +1,6 @@
-package com.powernode.spring6.test;
+package com.power.node.spring6.test;
 
-import com.powernode.spring6.web.UserAction;
+import com.power.node.spring6.web.UserAction;
 
 public class TestAction {
     public static void main(String[] args) {
