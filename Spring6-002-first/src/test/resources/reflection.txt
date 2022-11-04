@@ -1,0 +1,2 @@
+className=com.power.node.spring6.reflection.ReflectionClass
+methodName=doMethod
