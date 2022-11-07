@@ -1,6 +1,6 @@
 package com.myspringfromwork.test;
 
-import org.dom4j.DocumentException;
+import com.power.node.myspring.bean.UserService;
 import org.junit.Test;
 import org.myspringfromwork.core.ClassPathXmlApplicationContext;
 
@@ -12,11 +12,13 @@ import org.myspringfromwork.core.ClassPathXmlApplicationContext;
 public class MySpringTest {
 
     @Test
-    public void test01() throws DocumentException {
-
+    public void test01() {
         ClassPathXmlApplicationContext classPathXmlApplicationContext =
                 new ClassPathXmlApplicationContext("myspring.xml");
+        Object user = classPathXmlApplicationContext.getBean("user");
+        UserService userService = (UserService) classPathXmlApplicationContext.getBean("userService");
+        System.out.println(user);
+        userService.save();
     }
-
 
 }
