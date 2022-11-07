@@ -1,6 +1,8 @@
 package com.myspringfromwork.test;
 
+import org.dom4j.DocumentException;
 import org.junit.Test;
+import org.myspringfromwork.core.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -10,7 +12,11 @@ import org.junit.Test;
 public class MySpringTest {
 
     @Test
-    public void test01(){
-        System.out.println("aaaaaaaaaaaaaa");
+    public void test01() throws DocumentException {
+
+        ClassPathXmlApplicationContext classPathXmlApplicationContext =
+                new ClassPathXmlApplicationContext("myspring.xml");
     }
+
+
 }
