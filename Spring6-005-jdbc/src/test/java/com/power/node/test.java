@@ -1,5 +1,6 @@
 package com.power.node;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import com.power.node.bean.User;
 import org.junit.Before;
 import org.junit.Test;
@@ -67,6 +68,7 @@ public class test {
      */
     @Test
     public void test05(){
+        new DruidDataSource();
         String sql = "insert into user(name, age) values(?,?)";
         ArrayList<Object[]> users = new ArrayList<Object[]>();
         users.add(new Object[]{"杨浩",30});
