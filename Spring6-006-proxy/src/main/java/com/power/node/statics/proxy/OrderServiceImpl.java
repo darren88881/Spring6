@@ -15,4 +15,9 @@ public class OrderServiceImpl implements OrderService{
         }
         System.out.println("保存订单");
     }
+
+    @Override
+    public void deleteOrder(String orderNum) {
+        System.out.println("删除订单:"+orderNum);
+    }
 }

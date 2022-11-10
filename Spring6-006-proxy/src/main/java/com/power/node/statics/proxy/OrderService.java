@@ -9,5 +9,10 @@ public interface OrderService {
     /**
      * 保存订单
      */
-    public void save();
+    void save();
+
+    /**
+     * 删除订单
+     */
+    void deleteOrder(String orderNum);
 }

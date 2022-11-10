@@ -1,9 +1,14 @@
 package com.power.node.proxy;
 
+import com.power.node.jdk.proxy.MyInvocationHandler;
 import com.power.node.statics.proxy.OrderService;
 import com.power.node.statics.proxy.OrderServiceImpl;
 import com.power.node.statics.proxy.OrderServiceProxy;
 import org.junit.Test;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
 /**
  *
@@ -25,5 +30,21 @@ public class ProxyTest {
     public void staticProxyTest(){
         OrderService orderService = new OrderServiceProxy(new OrderServiceImpl());
         orderService.save();
+    }
+
+    /**
+     * JDK动态代理
+     * ClassLoader：代理类的类加载器
+     * interfaces：代理类实现的接口列表
+     * InvocationHandler：调用处理程序
+     */
+    @Test
+    public void jdkProxyTest(){
+        OrderService orderService = new OrderServiceImpl();
+        OrderService invoke =(OrderService) Proxy.newProxyInstance(
+                orderService.getClass().getClassLoader(),
+                orderService.getClass().getInterfaces(),
+                new MyInvocationHandler(orderService));
+        invoke.deleteOrder("1111");
     }
 }

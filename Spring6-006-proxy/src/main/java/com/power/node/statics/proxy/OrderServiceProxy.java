@@ -18,6 +18,14 @@ public class OrderServiceProxy implements OrderService{
         long begin = System.currentTimeMillis();
         mOrderService.save();
         long end = System.currentTimeMillis();
-        System.out.println("耗时："+(end - begin)+"毫秒");
+        System.out.println("保存订单耗时："+(end - begin)+"毫秒");
+    }
+
+    @Override
+    public void deleteOrder(String orderNum) {
+        long begin = System.currentTimeMillis();
+        mOrderService.deleteOrder(orderNum);
+        long end = System.currentTimeMillis();
+        System.out.println("删除订单耗时："+(end - begin)+"毫秒");
     }
 }
