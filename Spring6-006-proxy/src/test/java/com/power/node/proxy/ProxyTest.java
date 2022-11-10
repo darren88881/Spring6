@@ -45,6 +45,7 @@ public class ProxyTest {
                 orderService.getClass().getClassLoader(),
                 orderService.getClass().getInterfaces(),
                 new MyInvocationHandler(orderService));
-        invoke.deleteOrder("1111");
+        String s = invoke.deleteOrder("1111");
+        System.out.println(s);
     }
 }

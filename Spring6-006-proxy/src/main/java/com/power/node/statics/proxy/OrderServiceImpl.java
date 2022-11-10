@@ -17,7 +17,13 @@ public class OrderServiceImpl implements OrderService{
     }
 
     @Override
-    public void deleteOrder(String orderNum) {
+    public String deleteOrder(String orderNum) {
+        try {
+            Thread.sleep(1050);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("删除订单:"+orderNum);
+        return "订单已删除";
     }
 }

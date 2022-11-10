@@ -31,6 +31,6 @@ public class MyInvocationHandler implements InvocationHandler {
         // 1111
         System.out.println(args[0].toString());
         Object invoke = method.invoke(target, args);
-        return null;
+        return invoke;
     }
 }

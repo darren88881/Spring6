@@ -14,5 +14,5 @@ public interface OrderService {
     /**
      * 删除订单
      */
-    void deleteOrder(String orderNum);
+    String deleteOrder(String orderNum);
 }

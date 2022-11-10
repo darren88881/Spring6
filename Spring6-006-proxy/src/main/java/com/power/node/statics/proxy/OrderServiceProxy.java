@@ -22,10 +22,11 @@ public class OrderServiceProxy implements OrderService{
     }
 
     @Override
-    public void deleteOrder(String orderNum) {
+    public String deleteOrder(String orderNum) {
         long begin = System.currentTimeMillis();
         mOrderService.deleteOrder(orderNum);
         long end = System.currentTimeMillis();
         System.out.println("删除订单耗时："+(end - begin)+"毫秒");
+        return "订单已删除";
     }
 }
