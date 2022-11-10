@@ -8,6 +8,9 @@
         <option value="$PROJECT_DIR$/Spring6-002-first/pom.xml" />
         <option value="$PROJECT_DIR$/Spring6-mySpring/pom.xml" />
         <option value="$PROJECT_DIR$/Spring6-003-myspring/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring6-004-ioc-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring6-005-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring6-006-proxy/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -6,9 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring6-004-ioc-annotation" />
         <module name="Spring6-002-first" />
         <module name="Spring6-001-revelation" />
         <module name="Spring6-003-myspring" />
+        <module name="Spring6-005-jdbc" />
+        <module name="Spring6-006-proxy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
