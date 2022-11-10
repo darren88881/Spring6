@@ -1,11 +1,16 @@
 package com.power.node.proxy;
 
+import com.power.node.cglib.proxy.UserService;
 import com.power.node.jdk.proxy.MyInvocationHandler;
 import com.power.node.statics.proxy.OrderService;
 import com.power.node.statics.proxy.OrderServiceImpl;
 import com.power.node.statics.proxy.OrderServiceProxy;
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
 import org.junit.Test;
 
+import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
@@ -45,5 +50,33 @@ public class ProxyTest {
                 new MyInvocationHandler(orderService));
         String s = invoke.deleteOrder("1111");
         System.out.println(s);
+    }
+
+    /**
+     * CGLIB动态代理
+     *
+     * jdk1.8 以上运行时需要加上
+     * --add-opens java.base/java.lang=ALL-UNNAMED
+     * --add-opens java.base/sun.net.util=ALL-UNNAMED
+     */
+    @Test
+    public void cglibProxyTest(){
+        Enhancer enhancer = new Enhancer();
+        // 设置父类
+        enhancer.setSuperclass(UserService.class);
+        // 蛇者回调
+        enhancer.setCallback(new MethodInterceptor() {
+            @Override
+            public Object intercept(final Object o, final Method method, final Object[] objects,
+                    final MethodProxy methodProxy) throws Throwable {
+
+                System.out.println("登录前校验");
+                methodProxy.invokeSuper(o,objects);
+                return null;
+            }
+        });
+
+        UserService userServiceProxy = (UserService) enhancer.create();
+        userServiceProxy.loggin();
     }
 }
