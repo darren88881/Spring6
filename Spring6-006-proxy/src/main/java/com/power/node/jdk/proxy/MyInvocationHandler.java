@@ -25,12 +25,10 @@ public class MyInvocationHandler implements InvocationHandler {
     @Override
     public Object invoke(final Object proxy, final Method method, final Object[] args)
             throws Throwable {
-        System.out.println("invoke..");
-        // deleteOrder
-        System.out.println(method.getName());
-        // 1111
-        System.out.println(args[0].toString());
+        long begin = System.currentTimeMillis();
         Object invoke = method.invoke(target, args);
+        long end = System.currentTimeMillis();
+        System.out.println("删除订单耗时："+(end - begin)+"毫秒");
         return invoke;
     }
 }

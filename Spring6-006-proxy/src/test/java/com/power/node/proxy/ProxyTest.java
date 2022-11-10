@@ -6,8 +6,6 @@ import com.power.node.statics.proxy.OrderServiceImpl;
 import com.power.node.statics.proxy.OrderServiceProxy;
 import org.junit.Test;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
