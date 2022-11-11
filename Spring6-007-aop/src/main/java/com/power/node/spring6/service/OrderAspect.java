@@ -16,6 +16,6 @@ import org.springframework.stereotype.Component;
 public class OrderAspect {
     @Before("execution(* com.power.node.spring6.service.*.*())")
     public void enhance(){
-        System.out.println("我是一个通知，代码初次增强");
+        System.out.println("OrderAspect：代码初次增强");
     }
 }
