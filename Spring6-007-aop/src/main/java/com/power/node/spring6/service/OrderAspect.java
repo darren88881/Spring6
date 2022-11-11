@@ -6,17 +6,16 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
- * 切面
+ *
  * @Author darren
- * @Date 2022/11/11 9:53
+ * @Date 2022/11/11 10:41
  */
-@Component
 @Aspect
-@Order(1)
-public class LogAspect {
-
+@Component
+@Order(0)
+public class OrderAspect {
     @Before("execution(* com.power.node.spring6.service.*.*())")
     public void enhance(){
-        System.out.println("我是一个通知，代码再次增强");
+        System.out.println("我是一个通知，代码初次增强");
     }
 }
