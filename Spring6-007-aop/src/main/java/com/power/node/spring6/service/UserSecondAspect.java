@@ -9,14 +9,14 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
- * 切面
+ * 切面1
  * @Author darren
  * @Date 2022/11/11 9:53
  */
 @Component
 @Aspect
 @Order(1)
-public class LogAspect {
+public class UserSecondAspect {
 
     /**
      * 通用切点
@@ -26,16 +26,22 @@ public class LogAspect {
 
     }
 
+    /**
+     * 通知+切点
+     */
     @Before("universalPointcut()")
     public void enhance(){
-        System.out.println("LogAspect：代码再次增强");
+        System.out.println("UserSecondAspect：代码再次增强");
     }
 
+    /**
+     * 通知+切点
+     */
     @Around("universalPointcut()")
     public void aroundAdvice(ProceedingJoinPoint joinPoint) throws Throwable {
-        System.out.println("LogAspect：前环绕");
+        System.out.println("UserSecondAspect：前环绕");
         // 继续
         joinPoint.proceed();
-        System.out.println("LogAspect：后环绕");
+        System.out.println("UserSecondAspect：后环绕");
     }
 }

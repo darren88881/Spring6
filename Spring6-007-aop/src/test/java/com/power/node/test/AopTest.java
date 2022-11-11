@@ -1,5 +1,6 @@
 package com.power.node.test;
 
+import com.power.node.spring6.Student.StudentService;
 import com.power.node.spring6.service.Spring6Config;
 import com.power.node.spring6.service.UserService;
 import org.junit.Test;
@@ -13,6 +14,20 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class AopTest {
 
+
+
+    @Test
+    public void test01(){
+        ClassPathXmlApplicationContext classPathXmlApplicationContext =
+                new ClassPathXmlApplicationContext("spring.xml");
+        UserService userService = classPathXmlApplicationContext.getBean("userService",
+                UserService.class);
+        userService.loggin();
+    }
+
+    /**
+     * 全注解开发
+     */
     @Test
     public void notXmlTest(){
         AnnotationConfigApplicationContext annotationConfigApplicationContext =
@@ -22,12 +37,15 @@ public class AopTest {
         userService.loggin();
     }
 
+    /**
+     * 全XML配置开发
+     */
     @Test
-    public void test01(){
+    public void XmlTest(){
         ClassPathXmlApplicationContext classPathXmlApplicationContext =
-                new ClassPathXmlApplicationContext("spring.xml");
-        UserService userService = classPathXmlApplicationContext.getBean("userService",
-                UserService.class);
-        userService.loggin();
+                new ClassPathXmlApplicationContext("student.xml");
+        StudentService studentService = classPathXmlApplicationContext.getBean("studentService",
+                StudentService.class);
+        studentService.myName();
     }
 }
