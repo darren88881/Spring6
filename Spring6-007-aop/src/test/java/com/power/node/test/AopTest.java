@@ -1,6 +1,7 @@
 package com.power.node.test;
 
 import com.power.node.spring6.Student.StudentService;
+import com.power.node.spring6.bank.BankService;
 import com.power.node.spring6.service.Spring6Config;
 import com.power.node.spring6.service.UserService;
 import org.junit.Test;
@@ -47,5 +48,18 @@ public class AopTest {
         StudentService studentService = classPathXmlApplicationContext.getBean("studentService",
                 StudentService.class);
         studentService.myName();
+    }
+
+    /**
+     * 测试银行转账开启事务环绕通知
+     */
+    @Test
+    public void bankTest(){
+        ClassPathXmlApplicationContext classPathXmlApplicationContext =
+                new ClassPathXmlApplicationContext("spring.xml");
+        BankService bankService = classPathXmlApplicationContext.getBean("bankService",
+                BankService.class);
+        bankService.getMoney();
+
     }
 }
