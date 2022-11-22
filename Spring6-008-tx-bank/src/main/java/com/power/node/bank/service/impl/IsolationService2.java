@@ -17,7 +17,11 @@ public class IsolationService2 {
     @Autowired
     private AccountDao mAccountDao;
 
-    @Transactional(rollbackFor = Exception.class)
+    /**
+     * timeout 如果该事务中所有的DML语句还没有执行完毕的话，最终结果会选择回滚。
+     * @param account
+     */
+    @Transactional(rollbackFor = Exception.class, timeout = 10)
     public void insertAccount(Account account){
         mAccountDao.insetActno(account);
 
