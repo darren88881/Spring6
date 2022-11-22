@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/Spring6-004-ioc-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/Spring6-005-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/Spring6-006-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring6-007-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring6-008-tx-bank/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -7,12 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day05-手写Spring给Bean 赋值">
-      <change afterPath="$PROJECT_DIR$/Spring6-006-proxy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-006-proxy/src/main/java/com/power/node/statics/proxy/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-006-proxy/src/main/java/com/power/node/statics/proxy/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-006-proxy/src/main/java/com/power/node/statics/proxy/OrderServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring6-006-proxy/src/test/java/com/power/node/proxy/ProxyTest.java" afterDir="false" />
+    <list default="true" id="740e7036-f235-4ab2-a668-1db75b8c5ba3" name="Changes" comment="spring6-day08-AOP-全XML开发">
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/src/main/java/com/power/node/bank/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/src/main/java/com/power/node/bank/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/src/main/java/com/power/node/bank/pojo/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/src/main/java/com/power/node/bank/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/src/main/java/com/power/node/bank/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/src/main/resources/spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring6-008-tx-bank/src/test/java/com/power/node/bank/AccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -34,6 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="D:\Development\Git\Git\cmd\git.exe" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -70,21 +74,22 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
     &quot;last_directory_selection&quot;: &quot;E:/IDEA-workspace-darren/Spring6/Spring6-002-first/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IDEA-workspace-darren/Spring6/Spring6-003-myspring/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IDEA-workspace-darren/Spring6/Spring6-008-tx-bank/src/main/resources&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.gutterIcons&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8de45eb26f32dae9a7cee52482aef556&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;10947254f73835b2159f20d9f635de70&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-008-tx-bank\src\main\resources" />
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-007-aop\src\main\java\com\power\node\spring6" />
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-007-aop\src\test\java" />
+      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-007-aop\src\main\resources" />
       <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-003-myspring\src\main\resources" />
-      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\main\java\com\power\node\spring6\reflection" />
-      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\main\resources" />
-      <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\test\java\com\power\node\spring6\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IDEA-workspace-darren\Spring6\Spring6-002-first\src\test\resources" />
@@ -92,95 +97,106 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.powernode.spring6.dao" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.power.node.bank.service.impl" />
+      <recent name="com.power.node.bank.dao.impl" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProxyTest.staticProxyTest">
-    <configuration name="ProxyTest.staticProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring6-006-proxy" />
+  <component name="RunManager" selected="JUnit.AccountTest.test01">
+    <configuration name="AccountTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-008-tx-bank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.power.node.proxy.*" />
+          <option name="PATTERN" value="com.power.node.bank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.power.node.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.power.node.proxy.ProxyTest" />
-      <option name="METHOD_NAME" value="staticProxyTest" />
+      <option name="PACKAGE_NAME" value="com.power.node.bank" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.bank.AccountTest" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring6-005-jdbc" />
+    <configuration name="AccountTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-008-tx-bank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.power.node.*" />
+          <option name="PATTERN" value="com.power.node.bank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.power.node" />
-      <option name="MAIN_CLASS_NAME" value="com.power.node.test" />
+      <option name="PACKAGE_NAME" value="com.power.node.bank" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.bank.AccountTest" />
       <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring6-005-jdbc" />
+    <configuration name="AopTest.bankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-007-aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.power.node.*" />
+          <option name="PATTERN" value="com.power.node.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.power.node" />
-      <option name="MAIN_CLASS_NAME" value="com.power.node.test" />
-      <option name="METHOD_NAME" value="test03" />
+      <option name="PACKAGE_NAME" value="com.power.node.test" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.test.AopTest" />
+      <option name="METHOD_NAME" value="bankTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring6-005-jdbc" />
+    <configuration name="AopTest.notXmlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-007-aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.power.node.*" />
+          <option name="PATTERN" value="com.power.node.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.power.node" />
-      <option name="MAIN_CLASS_NAME" value="com.power.node.test" />
-      <option name="METHOD_NAME" value="test04" />
+      <option name="PACKAGE_NAME" value="com.power.node.test" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.test.AopTest" />
+      <option name="METHOD_NAME" value="notXmlTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring6-005-jdbc" />
+    <configuration name="AopTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring6-007-aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.power.node.*" />
+          <option name="PATTERN" value="com.power.node.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.power.node" />
-      <option name="MAIN_CLASS_NAME" value="com.power.node.test" />
-      <option name="METHOD_NAME" value="test05" />
+      <option name="PACKAGE_NAME" value="com.power.node.test" />
+      <option name="MAIN_CLASS_NAME" value="com.power.node.test.AopTest" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AccountTest.test02" />
+      <item itemvalue="JUnit.AccountTest.test01" />
+      <item itemvalue="JUnit.AopTest.bankTest" />
+      <item itemvalue="JUnit.AopTest.notXmlTest" />
+      <item itemvalue="JUnit.AopTest.test01" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProxyTest.staticProxyTest" />
-        <item itemvalue="JUnit.test.test02" />
-        <item itemvalue="JUnit.test.test05" />
-        <item itemvalue="JUnit.test.test04" />
-        <item itemvalue="JUnit.test.test03" />
+        <item itemvalue="JUnit.AccountTest.test01" />
+        <item itemvalue="JUnit.AccountTest.test02" />
+        <item itemvalue="JUnit.AopTest.bankTest" />
+        <item itemvalue="JUnit.AopTest.notXmlTest" />
+        <item itemvalue="JUnit.AopTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +234,14 @@
       <workItem from="1667781532073" duration="16109000" />
       <workItem from="1667866543215" duration="11512000" />
       <workItem from="1667887781789" duration="1076000" />
-      <workItem from="1668037890941" duration="2786000" />
+      <workItem from="1668037890941" duration="6390000" />
+      <workItem from="1668058244585" duration="5132000" />
+      <workItem from="1668130976152" duration="8166000" />
+      <workItem from="1668389617865" duration="2062000" />
+      <workItem from="1668392501203" duration="2881000" />
+      <workItem from="1668562319835" duration="6237000" />
+      <workItem from="1669078420854" duration="4387000" />
+      <workItem from="1669099582593" duration="1938000" />
     </task>
     <task id="LOCAL-00001" summary="spring6-day01">
       <created>1666840972740</created>
@@ -458,7 +481,84 @@
       <option name="project" value="LOCAL" />
       <updated>1668042558533</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="spring6-day07-修改项目配置文件">
+      <created>1668042850844</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1668042850844</updated>
+    </task>
+    <task id="LOCAL-00036" summary="spring6-day07-JDK动态代理">
+      <created>1668057552767</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1668057552767</updated>
+    </task>
+    <task id="LOCAL-00037" summary="spring6-day07-JDK动态代理接受返回值">
+      <created>1668057833152</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1668057833152</updated>
+    </task>
+    <task id="LOCAL-00038" summary="spring6-day07-JDK动态代理代码增强">
+      <created>1668058323059</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1668058323059</updated>
+    </task>
+    <task id="LOCAL-00039" summary="spring6-day07-CGLIB动态代理">
+      <created>1668065018469</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1668065018469</updated>
+    </task>
+    <task id="LOCAL-00040" summary="spring6-day08-AOP">
+      <created>1668134359608</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1668134359608</updated>
+    </task>
+    <task id="LOCAL-00041" summary="spring6-day08-AOP-Order切面顺序">
+      <created>1668134643384</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1668134643384</updated>
+    </task>
+    <task id="LOCAL-00042" summary="spring6-day08-AOP-通用切点">
+      <created>1668135144720</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1668135144720</updated>
+    </task>
+    <task id="LOCAL-00043" summary="spring6-day08-AOP-全注解开发">
+      <created>1668135747497</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1668135747497</updated>
+    </task>
+    <task id="LOCAL-00044" summary="spring6-day08-AOP-全XML开发">
+      <created>1668138433990</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1668138433990</updated>
+    </task>
+    <task id="LOCAL-00045" summary="spring6-day08-AOP-模拟事务">
+      <created>1668393187904</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1668393187904</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,25 +569,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="spring6-day01-getBean" />
-    <MESSAGE value="spring6-day02-log4j2" />
-    <MESSAGE value="spring6-day02-get and set 注入" />
-    <MESSAGE value="spring6-day02-P命名空间和C命名空间注入" />
-    <MESSAGE value="spring6-day02-autowire自动装配" />
-    <MESSAGE value="spring6-day03-引入外部属性文件" />
-    <MESSAGE value="spring6-day03-bean的作用域" />
-    <MESSAGE value="spring6-day03-设计模式-工厂模式" />
-    <MESSAGE value="spring6-day03-测试工厂模式" />
-    <MESSAGE value="spring6-day03-简单工厂实例化Bean" />
-    <MESSAGE value="spring6-day03-通过FactoryBean实例化Bean" />
-    <MESSAGE value="spring6-day04-通过FactoryBean实例化含有日期的对象" />
     <MESSAGE value="spring6-day04-Bean的生命周期" />
     <MESSAGE value="spring6-day04-Bean的生命周期图解" />
     <MESSAGE value="spring6-day05-循环依赖问题" />
@@ -501,7 +601,19 @@
     <MESSAGE value="spring6-day06-jdbc查询" />
     <MESSAGE value="spring6-day06-jdbc德鲁伊连接池" />
     <MESSAGE value="spring6-day07-动态代理-静态代理" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring6-day07-动态代理-静态代理" />
+    <MESSAGE value="spring6-day07-动态代理-静态代理2" />
+    <MESSAGE value="spring6-day07-修改项目配置文件" />
+    <MESSAGE value="spring6-day07-JDK动态代理" />
+    <MESSAGE value="spring6-day07-JDK动态代理接受返回值" />
+    <MESSAGE value="spring6-day07-JDK动态代理代码增强" />
+    <MESSAGE value="spring6-day07-CGLIB动态代理" />
+    <MESSAGE value="spring6-day08-AOP" />
+    <MESSAGE value="spring6-day08-AOP-Order切面顺序" />
+    <MESSAGE value="spring6-day08-AOP-通用切点" />
+    <MESSAGE value="spring6-day08-AOP-全注解开发" />
+    <MESSAGE value="spring6-day08-AOP-全XML开发" />
+    <MESSAGE value="spring6-day08-AOP-模拟事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring6-day08-AOP-模拟事务" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
