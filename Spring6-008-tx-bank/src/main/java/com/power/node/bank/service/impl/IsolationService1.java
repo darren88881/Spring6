@@ -26,10 +26,12 @@ public class IsolationService1 {
      *  REPEATABLE_READ     可重复都
      *  SERIALIZABLE        串行化
      *
+     * readOnly = true
+     *   只能在查询事务中，可以提高查询效率
      * @param actno
      * @return
      */
-    @Transactional(rollbackFor = Exception.class, isolation = Isolation.READ_UNCOMMITTED)
+    @Transactional(rollbackFor = Exception.class, isolation = Isolation.READ_UNCOMMITTED, readOnly = true)
     public Account getAccountByActno(String actno){
         return mAccountDao.selectByActno(actno);
     }

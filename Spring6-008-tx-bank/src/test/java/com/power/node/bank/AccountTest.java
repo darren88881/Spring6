@@ -5,6 +5,7 @@ import com.power.node.bank.service.AccountService;
 import com.power.node.bank.service.impl.IsolationService1;
 import com.power.node.bank.service.impl.IsolationService2;
 import org.junit.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -75,6 +76,29 @@ public class AccountTest {
         System.out.println(name);
         Account accountByActno = iso1.getAccountByActno("act-006");
         System.out.println(accountByActno);
+    }
+
+    /**
+     * 测试只读
+     */
+    @Test
+    public void test03(){
+        ClassPathXmlApplicationContext classPathXmlApplicationContext =
+                new ClassPathXmlApplicationContext("spring.xml");
+        IsolationService1 iso1 = classPathXmlApplicationContext.getBean("iso1",
+                IsolationService1.class);
+        Account accountByActno = iso1.getAccountByActno("act-006");
+        System.out.println(accountByActno);
+    }
+
+    @Test
+    public void test04(){
+        AnnotationConfigApplicationContext annotationContext =
+                new AnnotationConfigApplicationContext(Spring6Config.class);
+        IsolationService1 iso1 = annotationContext.getBean("iso1",IsolationService1.class);
+        Account accountByActno = iso1.getAccountByActno("act-006");
+        System.out.println(accountByActno);
+
     }
 
 
