@@ -1,5 +1,7 @@
 package com.power.node.bank.service;
 
+import com.power.node.bank.pojo.Account;
+
 /**
  *
  * @Author darren
@@ -14,4 +16,6 @@ public interface AccountService {
      * @param money 转出金额
      */
     void transfer(String fromActno,String toActno,double money);
+
+    int addAccount(Account account);
 }

@@ -3,8 +3,11 @@ package com.power.node.bank.service.impl;
 import com.power.node.bank.dao.AccountDao;
 import com.power.node.bank.pojo.Account;
 import com.power.node.bank.service.AccountService;
+import com.power.node.bank.service.InsetAccountService;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -19,6 +22,10 @@ public class AccountServiceImpl implements AccountService {
 
     @Autowired
     private AccountDao accountDao;
+
+    @Resource(name ="insetAccountService")
+    private InsetAccountService insetAccountService;
+
 
     /**
      * 控制事务
@@ -44,6 +51,15 @@ public class AccountServiceImpl implements AccountService {
         if (i != NUM) {
             throw new RuntimeException("转账失败");
         }
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
+    public int addAccount(final Account account) {
+        int num1 = accountDao.insetActno(account);
+
+        int num2 = insetAccountService.insetAccount(new Account("ACT-004", 1000.00));
+        return num1+num2;
     }
 
 }
