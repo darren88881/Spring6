@@ -2,6 +2,8 @@ package com.power.node.bank;
 
 import com.power.node.bank.pojo.Account;
 import com.power.node.bank.service.AccountService;
+import com.power.node.bank.service.impl.IsolationService1;
+import com.power.node.bank.service.impl.IsolationService2;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -51,5 +53,29 @@ public class AccountTest {
         System.out.println("创建两个"+i+"账户成功");
 
     }
+    /**
+     * 测试事务的隔离级别
+     */
+    public static void main(String[] args) {
+        ClassPathXmlApplicationContext classPathXmlApplicationContext =
+                new ClassPathXmlApplicationContext("spring.xml");
+        IsolationService1 iso1 = classPathXmlApplicationContext.getBean("iso1",
+                IsolationService1.class);
+        IsolationService2 iso2 = classPathXmlApplicationContext.getBean("iso2",
+                IsolationService2.class);
+
+        new Thread(()->{
+            String name = Thread.currentThread().getName();
+            System.out.println(name);
+            iso2.insertAccount(new Account("act-006", 600.00));
+        }).start();
+
+
+        String name = Thread.currentThread().getName();
+        System.out.println(name);
+        Account accountByActno = iso1.getAccountByActno("act-006");
+        System.out.println(accountByActno);
+    }
+
 
 }

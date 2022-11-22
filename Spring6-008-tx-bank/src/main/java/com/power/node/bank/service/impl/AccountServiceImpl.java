@@ -58,7 +58,7 @@ public class AccountServiceImpl implements AccountService {
     public int addAccount(final Account account) {
         int num1 = accountDao.insetActno(account);
 
-        int num2 = insetAccountService.insetAccount(new Account("ACT-004", 1000.00));
+        int num2 = insetAccountService.insetAccount(new Account("act-004", 1000.00));
         return num1+num2;
     }
 
