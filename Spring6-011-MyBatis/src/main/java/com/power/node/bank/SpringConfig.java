@@ -33,7 +33,7 @@ public class SpringConfig {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(myDruidDataSource);
         sqlSessionFactoryBean.setConfigLocation(new ClassPathResource("mybatis-config2.xml"));
-        sqlSessionFactoryBean.setTypeAliasesPackage("com.power.node.bank.mapper");
+        sqlSessionFactoryBean.setTypeAliasesPackage("com.power.node.bank.pojo");
         return sqlSessionFactoryBean;
     }
 
