@@ -6,6 +6,8 @@ import com.power.node.bank.service.AccountService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -14,6 +16,8 @@ import java.util.List;
  * @Author darren
  * @Date 2022/11/23 16:17
  */
+@Service
+@Transactional(rollbackFor = Exception.class)
 public class AccountServiceImpl implements AccountService {
 
     private static Logger logger = LoggerFactory.getLogger(AccountServiceImpl.class);
@@ -88,6 +92,7 @@ public class AccountServiceImpl implements AccountService {
             toAccount.setBalance(toAccount.getBalance() + money);
 
             int count = mAccountMapper.updateAccount(fromAccount);
+
             count += mAccountMapper.updateAccount(toAccount);
             if (count != NUM) {
                 logger.error("转账失败");
